@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:fragment="header-custom">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Online resume</title>
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
+
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <p class="navbar-brand">
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.png" alt="profile image" />
+      </span>
+    </p>
+    <h4 class="mb-0">Konstantin Bulygin</h4>
+
+    <!-- About-->
+    <div class="contacts">
+      <section class="resume-section" id="about">
+        <div class="resume-section-content">
+          <div class="subheading mb-5">
+            <p>CONTACTS</p>
+            <p>+7 905 407 66 30</p>
+            <p>KORUSTLT@GMAIL.COM</p>
+            <a href="files/konstantin_bulygin_java_developer_cv.pdf"
+              download="konstantin_bulygin_java_developer_cv">DOWNLOAD AS PDF</a>
+          </div>
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com/in/kostyafrom" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://github.com/kostyaFrom?tab=repositories" target="_blank"><i
+                class="fab fa-github"></i></a>
+            <a class="social-icon" href="https://www.facebook.com/" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </nav>
+
+  <!-- Page Content-->
+  <div class="container-fluid p-0">
+    <div class="container ml-2 mt-3">
+      <a href="@{?lang=en}">
+        <img src="images/uk.png" data-lang='en' about="uk" /><span class="ml-2">En</span>
+      </a>
+      <a href="@{?lang=ru}" class="ml-2">
+        <img src="images/ru.png" data-lang='ru' about="ru" /><span class="ml-2">Ru</span>
+      </a>
+    </div>
+
+    <!-- Skills-->
+    <section class="resume-section" id="skills">
+      <div class="resume-section-content">
+        <h4 class="mb-5">SKILLS</h4>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item"><b>Java 11</b></li>
+          <li class="list-inline-item"><b>Spring Boot</b></li>
+          <li class="list-inline-item"><b>PostgreSQL</b></li>
+          <li class="list-inline-item"><b>Thymeleaf</b></li>
+          <li class="list-inline-item"><b>REST Api</b></li>
+          <li class="list-inline-item"><b>Html/Css/Js</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0" />
+
+    <!-- Experience-->
+    <section class="resume-section" id="experience">
+      <div class="resume-section-content">
+        <h4 class="mb-5">EXPERIENCE</h4>
+        <div class="d-flex flex-column">
+          <div class="flex-grow-1 dev-icons">
+            <p>To show my experience in studied technologies I have 3 projects deployed on Heroku.</p>
+
+            <ul>
+              <li>Links to Heroku</li>
+              <ul>
+                <li>
+                  <a href="https://clients-friends-app.herokuapp.com/" target="_blank">Friend App.</a>
+                </li>
+                <li>
+                  <a href="https://online-store-spring-boot.herokuapp.com" target="_blank">Online store.</a>
+                </li>
+                <li>
+                  <a href="https://online-pma-app.herokuapp.com" target="_blank">Project Management app.</a>
+                </li>
+              </ul>
+
+              <li>Links to GitHub</li>
+              <ul>
+                <li>
+                  <a href="https://github.com/kostyaFrom/friendApp" target="_blank">Friend App.</a>
+                </li>
+                <li>
+                  <a href="https://github.com/kostyaFrom/onlineStore" target="_blank">Online store.</a>
+                </li>
+                <li>
+                  <a href="https://github.com/kostyaFrom/projectManApp" target="_blank">Project Management app.</a>
+                </li>
+              </ul>
+              <li>Link to REST Api for Friend App</li>
+              <ul>
+                <li>
+                  <a href="https://clients-friends-app.herokuapp.com/swagger-ui/" target="_blank">Swagger ui</a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0" />
+
+    <!-- Education-->
+    <section class="resume-section" id="education">
+      <div class="resume-section-content">
+        <h4 class="mb-5">EDUCATION</h4>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <p>
+              Currently, I`m studying on the 4th course of
+              <a href="https://edu.rosdistant.ru/" target="_blank">"Tolyatti Government University".</a>
+              Subject is "Applied computer science".
+            </p>
+          </div>
+        </div>
+
+        <p>Courses finished on Udemy</p>
+        <ul>
+          <li>
+            <a href="https://www.udemy.com/share/101Wdq3@HpK0UTQKqhXKddNxGo3MGggmQu8uZ9Fl2cfffqr1doVsttorfLm2neE0J1CvNVQa/"
+              target="_blank">
+              Java Programming Masterclass covering Java 11 & Java 17
+            </a>
+          </li>
+          <li>
+            <a href="https://www.udemy.com/share/102urC3@JvdlmiviDDxFQuZdsp174fkXg7VrFJ2f1DvkUH_-Bb2Ikid9lNf8L5Dw1MYeHol5/"
+              target="_blank">
+              Практический курс для новичков по SQL и PostgreSQL
+            </a>
+          </li>
+          <li>
+            <a href="https://www.udemy.com/share/102dJe3@a8_kiuxrg6UUJ5DhyXQep1bD26oHM4DU-b-30qAvhJmLvxb-VWgewiWWOM6v_f9E/"
+              target="_blank">
+              Learn Spring 5, Boot 2, JPA, Thymeleaf.
+            </a>
+          </li>
+          <li>
+            <a href="https://www.udemy.com/share/1013ja3@sx5yMqzT4VHNOFw61MGEnT5huYddzTfT2NcvUnYQtxMZ42f1sJ1Id4twbOQtYSgK/"
+              target="_blank">
+              Master the Coding Interview: Data Structures + Algorithms
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0" />
+
+    <!--additional info-->
+    <section class="resume-section" id="additional">
+      <div class="resume-section-content">
+        <h4 class="mb-5">ADDITIONAL INFO</h4>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <p>I had been working as a sales manager in wholesale trade with auto spare parts since 2014 till december
+              2021. My duties were work in the 1C program, control remains of spare parts, communication with customers,
+              control customers debt, work with a bank account, order processing, calculations of the cost of the parts
+              from the metal for their production on press equipment, participation in bidding on the B2B platform.</p>
+            <p>Ready to relocate.</p>
+            <p>Date of birth: 14/04/1981.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0" />
+
+    <!-- Contacts-->
+    <section class="resume-section" id="contacts">
+      <div class="resume-section-contacts">
+        <h4 class="mb-5">CONTACTS</h4>
+        <div class="flex-grow-1 contacts-info">
+          <p>+7 905 407 66 30</p>
+          <p>korustlt@gmail.com</p>
+        </div>
+        <div class="contacts-info-fab">
+          <a class="social-icon" href="https://www.linkedin.com/in/kostyafrom" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a class="social-icon" href="https://github.com/kostyaFrom?tab=repositories" target="_blank"><i
+              class="fab fa-github"></i></a>
+          <a class="social-icon" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
