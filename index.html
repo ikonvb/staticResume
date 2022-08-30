@@ -4,7 +4,7 @@
 <head th:fragment="header-custom">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Online resume</title>
+  <title data-langkey="title">Online resume</title>
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -23,18 +23,18 @@
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.png" alt="profile image" />
       </span>
     </p>
-    <h4 class="mb-0">Konstantin Bulygin</h4>
+    <h4 class="mb-0" data-langkey="name">Konstantin Bulygin</h4>
 
     <!-- About-->
     <div class="contacts">
       <section class="resume-section" id="about">
         <div class="resume-section-content">
           <div class="subheading mb-5">
-            <p>CONTACTS</p>
+            <p data-langkey="contacts">CONTACTS</p>
             <p>+7 905 407 66 30</p>
             <p>KORUSTLT@GMAIL.COM</p>
             <a href="files/konstantin_bulygin_java_developer_cv.pdf"
-              download="konstantin_bulygin_java_developer_cv">DOWNLOAD AS PDF</a>
+              download="konstantin_bulygin_java_developer_cv" data-langkey="downloadResume">DOWNLOAD AS PDF</a>
           </div>
           <div class="social-icons">
             <a class="social-icon" href="https://www.linkedin.com/in/kostyafrom" target="_blank"><i
@@ -52,25 +52,26 @@
   <!-- Page Content-->
   <div class="container-fluid p-0">
     <div class="container ml-2 mt-3">
-      <a href="@{?lang=en}">
-        <img src="images/uk.png" data-lang='en' about="uk" /><span class="ml-2">En</span>
-      </a>
-      <a href="@{?lang=ru}" class="ml-2">
-        <img src="images/ru.png" data-lang='ru' about="ru" /><span class="ml-2">Ru</span>
-      </a>
+      <div id='languages'>
+        <img src="images/uk.png" class='language' data-lang='en' about="uk" /><span class="ml-2">En</span>
+        <img src="images/ru.png" class='language' data-lang='ru' about="ru" /><span class="ml-2">Ru</span>
+      </div>
     </div>
 
     <!-- Skills-->
     <section class="resume-section" id="skills">
       <div class="resume-section-content">
-        <h4 class="mb-5">SKILLS</h4>
+        <h4 data-langkey="skills" class="mb-5">SKILLS</h4>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item"><b>Java 11</b></li>
           <li class="list-inline-item"><b>Spring Boot</b></li>
+          <li class="list-inline-item"><b>Kotlin</b></li>
+          <li class="list-inline-item"><b>Ktor</b></li>
           <li class="list-inline-item"><b>PostgreSQL</b></li>
           <li class="list-inline-item"><b>Thymeleaf</b></li>
           <li class="list-inline-item"><b>REST Api</b></li>
           <li class="list-inline-item"><b>Html/Css/Js</b></li>
+          <li class="list-inline-item"><b>English B1</b></li>
         </ul>
       </div>
     </section>
@@ -80,13 +81,25 @@
     <!-- Experience-->
     <section class="resume-section" id="experience">
       <div class="resume-section-content">
-        <h4 class="mb-5">EXPERIENCE</h4>
+        <h4 class="mb-5" data-langkey="exp">EXPERIENCE</h4>
         <div class="d-flex flex-column">
           <div class="flex-grow-1 dev-icons">
-            <p>To show my experience in studied technologies I have 3 projects deployed on Heroku.</p>
+
+            <p data-langkey="EXPERIENCE">Currently work as a Kotlin backend developer at Ltd.MGS since 25.04.2022</p>
+
+            <p data-langkey="EXPERIENCE">Have experience to write service for SKUD Sigur for Sochi Igornaya zone Casino</p>
+            <p data-langkey="EXPERIENCE">Stack: Kotlin, Ktor</p>
+
+            <p data-langkey="EXPERIENCE">Have experience to write service for Casino to check customers for FMS and Terrorist database</p>
+            <p data-langkey="EXPERIENCE">Stack: Kotlin, Spring</p>
+
+            <p data-langkey="EXPERIENCE">Have experience to write backend logic for table service for dealer and ....</p>
+            <p data-langkey="EXPERIENCE">Stack: Kotlin, Ktor</p>
+
+            <p data-langkey="deployInfo">To show my experience in studied technologies I have 3 projects deployed on Heroku.</p>
 
             <ul>
-              <li>Links to Heroku</li>
+              <li data-langkey="linksToHeroku">Links to Heroku</li>
               <ul>
                 <li>
                   <a href="https://clients-friends-app.herokuapp.com/" target="_blank">Friend App.</a>
@@ -99,7 +112,7 @@
                 </li>
               </ul>
 
-              <li>Links to GitHub</li>
+              <li data-langkey="linksToGithub">Links to GitHub</li>
               <ul>
                 <li>
                   <a href="https://github.com/kostyaFrom/friendApp" target="_blank">Friend App.</a>
@@ -111,10 +124,10 @@
                   <a href="https://github.com/kostyaFrom/projectManApp" target="_blank">Project Management app.</a>
                 </li>
               </ul>
-              <li>Link to REST Api for Friend App</li>
+              <li data-langkey="EXPERIENCE">Link to REST Api for Friend App</li>
               <ul>
                 <li>
-                  <a href="https://clients-friends-app.herokuapp.com/swagger-ui/" target="_blank">Swagger ui</a>
+                  <a href="https://clients-friends-app.herokuapp.com/swagger-ui/" target="_blank" data-langkey="linksToSwagger">Swagger ui</a>
                 </li>
               </ul>
             </ul>
@@ -128,18 +141,18 @@
     <!-- Education-->
     <section class="resume-section" id="education">
       <div class="resume-section-content">
-        <h4 class="mb-5">EDUCATION</h4>
+        <h4 class="mb-5" data-langkey="edu">EDUCATION</h4>
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
-            <p>
+            <p data-langkey="education">
               Currently, I`m studying on the 4th course of
-              <a href="https://edu.rosdistant.ru/" target="_blank">"Tolyatti Government University".</a>
-              Subject is "Applied computer science".
+              <a href="https://edu.rosdistant.ru/" target="_blank" data-langkey="tgu">"Tolyatti Government University".</a>
+              <span data-langkey="subject">Subject is "Applied computer science".</span>
             </p>
           </div>
         </div>
 
-        <p>Courses finished on Udemy</p>
+        <p data-langkey="udemy">Courses finished on Udemy</p>
         <ul>
           <li>
             <a href="https://www.udemy.com/share/101Wdq3@HpK0UTQKqhXKddNxGo3MGggmQu8uZ9Fl2cfffqr1doVsttorfLm2neE0J1CvNVQa/"
@@ -174,15 +187,15 @@
     <!--additional info-->
     <section class="resume-section" id="additional">
       <div class="resume-section-content">
-        <h4 class="mb-5">ADDITIONAL INFO</h4>
+        <h4 class="mb-5" data-langkey="additionalInfo">ADDITIONAL INFO</h4>
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
-            <p>I had been working as a sales manager in wholesale trade with auto spare parts since 2014 till december
+            <p data-langkey="additionInfoAbout">I had been working as a sales manager in wholesale trade with auto spare parts since 2014 till december
               2021. My duties were work in the 1C program, control remains of spare parts, communication with customers,
               control customers debt, work with a bank account, order processing, calculations of the cost of the parts
               from the metal for their production on press equipment, participation in bidding on the B2B platform.</p>
-            <p>Ready to relocate.</p>
-            <p>Date of birth: 14/04/1981.</p>
+            <p data-langkey="relocate">Ready to relocate.</p>
+            <p data-langkey="dob">Date of birth: 14/04/1981.</p>
           </div>
         </div>
       </div>
@@ -193,7 +206,7 @@
     <!-- Contacts-->
     <section class="resume-section" id="contacts">
       <div class="resume-section-contacts">
-        <h4 class="mb-5">CONTACTS</h4>
+        <h4 class="mb-5" data-langkey="contacts">CONTACTS</h4>
         <div class="flex-grow-1 contacts-info">
           <p>+7 905 407 66 30</p>
           <p>korustlt@gmail.com</p>
@@ -208,6 +221,7 @@
       </div>
     </section>
   </div>
+  <script src='js/internationalization.js' ></script>
 </body>
 
 </html>
