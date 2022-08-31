@@ -249,6 +249,10 @@ textarea {
   line-height: inherit;
 }
 
+img.language {
+  margin: 5px;
+}
+
 button,
 input {
   overflow: visible;
